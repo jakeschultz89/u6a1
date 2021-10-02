@@ -12,12 +12,12 @@ function toggleImport(){
 }
 function toggleForm(){
     if(form){
-        $("form").slideUp(1500);
+        $("form").slideUp(500);
         $("#btnAdd").text("Add task");
         form=false;
     }else{
-        $("form").slideDown(1500);
-        $("#btnAdd").text("Hide the form");
+        $("form").slideDown(500);
+        $("#btnAdd").text("Hide form");
         form=true;
     }
 }
@@ -31,15 +31,21 @@ function save(){
     let color=$("#selColor").val();
     let collaborator=$("#txtCollaborator").val();
     let description=$("#txtDescription").val();
-    // console log them
-    console.log(title,date,location,priority,color,collaborator,description);
+    // // console log them
+    // console.log(title,date,location,priority,color,collaborator,description);
+    //create a new Task object
+    let task = new Task(title,important,date,location,priority,color,collaborator,description);
+    console.log(task);
     clearForm();
-    displayTask(title);
+    displayTask(task);
 }
-function displayTask(title){
+function displayTask(task){
+    //display obj information
     syntax=`
-    <div>
-        <h6>${title}</h6>
+    <div >
+        <h6>${task.title}</h6>
+        <label>${task.location}</label>
+        <label>${task.collaborator}</label>
     </div>`;
     $(".pending-tasks").append(syntax);
 }
