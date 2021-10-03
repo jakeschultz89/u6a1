@@ -1,9 +1,10 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 .container-fluid {
     display: flex;
+    width:90%;
+    justify-content: space-between;
+    padding:1rem;
 }
+
 #iImportant{
     font-size:30px;
     color: rgb(255, 208, 0);
@@ -13,34 +14,36 @@
 #iImportant:hover{
     color:rgb(255,187,0);
 }
-button{
-    align-items: center;
-    margin-left: 25rem;
-    margin-top: 3rem;
+form{
+    background-color:rgb(200,200,200,200,.5);
+    border-radius:10px;
+    width: 35vw;
 }
-.section-list {
-    margin-top: 3rem;
-    align-items: center;
-    flex: 3;
+form div{
+    padding:3rem;
+
 }
-.section-form{
-    flex: 5;
-    margin-left: 5rem;
+/* main */
+body{
+    height: 100vh;
+    background-image: url(../img/12261194.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-nav{
-    height: 10vh;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items:center;
-    text-decoration: none;
-    background-color: grey;
+/* header */
+header{
+    background-color:#413896;
     color: white;
 }
-nav a{
-    text-decoration: none;
+.container-fluid-header{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding:1rem;
 }
-nav a:visited{
-    text-decoration: none;
-    color: white
+#btn-add{
+    background-color: green;
+    border: none;
 }
+/* task */

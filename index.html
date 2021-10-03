@@ -10,17 +10,27 @@
     <title>My Super Calendar</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
         <a href="index.html">Home <i class="fas fa-home"></i></a>
         <a href="completed.html">Completed Tasks <i class="fas fa-check-square"></i></i></a>
         <a href="notes.html">Notes <i class="fas fa-clipboard"></i></a>
         </nav>
+    </header> -->
+    <header>
+        <div class="container-fluid-header">
+            <h1>My Super Calendar</h1>
+            <button id="btnAdd" class="btn btn-danger">Add Task</button>
+        </div>
     </header>
     <main class="container-fluid">
+        <section class="section-list">
+            <h3>Pending Tasks</h3>
+            <div class="pending-tasks">
+                <!-- tasks here -->
+            </div>
+        </section>
         <section class="section-form">
-            <button id="btnAdd" class="btn btn-danger">Add Task</button>
-
             <form>
                 <div>
                     <label class="form-label">Title</label>
@@ -61,12 +71,7 @@
                 <button type="button" id="btnSave" class="btn btn-dark">Save Task</button>
             </form>
         </section>
-        <section class="section-list">
-            <h3>Pending Tasks</h3>
-            <div class="pending-tasks">
-                <!-- tasks here -->
-            </div>
-        </section>
+        
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/task.js"></script>

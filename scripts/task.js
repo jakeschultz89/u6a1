@@ -9,5 +9,7 @@ class Task {
         this.color=color;
         this.collaborator=collaborator;
         this.description=description;
+
+        this.name="Jake";
     }
 }
